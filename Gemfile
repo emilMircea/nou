@@ -10,6 +10,8 @@ group :development, :test do
 	gem 'rspec-rails', '2.13.1'
 	gem 'rspec-core', '2.13.1'
 	gem 'bootstrap-sass', '3.1.0.0'
+  gem 'bcrypt-ruby', '3.1.2' 
+  gem 'spork', '~> 1.0rc'
 end
 
 group :test do
