@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'spork'
+ENV["RAILS_ENV"] ||= 'test'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -58,6 +59,10 @@ require 'capybara/rspec'
 
 RSpec.configure do |config|
   config.include Capybara::DSL, :type => :feature
+end
+
+RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
 end
 
 

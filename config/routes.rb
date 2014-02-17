@@ -1,5 +1,5 @@
 Nou::Application.routes.draw do
-  get "users/new"
+  resources :users
   # cu root indexul devine pur si simply localhost:3000/
   root 'static_pages#home'
   # in loc de localhost:3000/static_pages/help devine localhost:3000/help
